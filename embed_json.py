@@ -18,7 +18,7 @@ class _Field:
     def __init__(self, data: dict):
         self.name: Optional[str] = data.get('name')
         self.value: Optional[str] = data.get('value')
-        self.inline: Optional[bool] = data.get('inline') or True
+        self.inline: Optional[bool] = data.get('inline', True)
 
 
 class _Embed:
